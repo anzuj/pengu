@@ -14,33 +14,6 @@ function isTouching(a, b) {
         aRect.left > bRect.left + bRect.width
     );
 }
-
-//main function with arrow key logic
-// window.addEventListener("keyup", function (e) {
-//     if (e.key === "ArrowDown") {
-//         const currTop = extractPos(avatar.style.top);
-//         avatar.style.top = `${currTop + 50}px`;
-//     } else if (e.key === "ArrowUp") {
-//         const currTop = extractPos(avatar.style.top);
-//         avatar.style.top = `${currTop - 50}px`;
-//     } else if (e.key === "ArrowRight") {
-//         const currLeft = extractPos(avatar.style.left);
-//         avatar.style.transform = 'scale(1,1)'
-//         avatar.style.left = `${currLeft + 50}px`;
-//     } else if (e.key === "ArrowLeft") {
-//         const currLeft = extractPos(avatar.style.left);
-//         avatar.style.transform = 'scale(-1,1)'
-//         avatar.style.left = `${currLeft - 50}px`;
-//     }
-//     //when pengu reaches heart
-//     if (isTouching(avatar, heart)) {
-//         //positioning message
-//         showMessage();
-//         //moving heart to a new location
-//         moveHeart();
-//     }
-
-// });
 window.addEventListener("keyup", function (e) {
     if (e.key === "ArrowDown") {
         moveHorizontal(50);
